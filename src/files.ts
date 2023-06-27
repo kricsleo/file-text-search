@@ -2,7 +2,10 @@ import { Options, Search } from './types';
 import glob from 'fast-glob'
 import fs from 'fs/promises'
 
-const defaultExclude = ['node_modules/']
+const defaultExclude = [
+  '**/node_modules/**',
+  '**/dist/**',
+]
 
 export async function findFiles(options: Options) {
   const exclude = options.exclude || defaultExclude
@@ -20,7 +23,11 @@ export function searchContent(content: string, search: Search) {
     : search
   const matches = []
   for (const match of content.matchAll(searchReg)) {
-    matches.push({ match: match[0], index: match.index })
+    matches.push({ 
+      match: match[0], 
+      start: match.index!, 
+      end: match.index! + match[0].length
+    })
   }
   return matches
 }
