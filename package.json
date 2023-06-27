@@ -68,5 +68,9 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "fast-glob": "^3.2.12",
+    "tinypool": "^0.5.0"
   }
 }
