@@ -1,4 +1,4 @@
-import { Options } from './types';
+import { Options, Search } from './types';
 import glob from 'fast-glob'
 import fs from 'fs/promises'
 
@@ -14,21 +14,33 @@ export async function findFiles(options: Options) {
   return files
 }
 
-export async function searchFile(path: string, options: Options) {
-  const content = await fs.readFile(path, 'utf-8')
-  const matches = options.text.map(text => {
-    const textReg = typeof text === 'string' ? new RegExp(text) : text
-    const matches = content.match(textReg)
-    return { text, matches }
+export function searchContent(content: string, search: Search) {
+  const searchReg = typeof search === 'string' 
+    ? new RegExp(search, 'g') 
+    : search
+  const matches = []
+  for (const match of content.matchAll(searchReg)) {
+    matches.push({ match: match[0], index: match.index })
+  }
+  return matches
+}
+
+export async function searchFile(file: string, options: Options) {
+  const content = await fs.readFile(file, 'utf-8')
+  const allMatches = options.search.map(search => {
+    const matches = searchContent(content, search)
+    return { search, matches }
   })
+  const matches = allMatches.filter(match => match.matches.length)
   return matches
 }
 
 export async function search(options: Options) {
   const files = await findFiles(options)
-  const matches = await Promise.all(files.map(async path => {
-    const matches = await searchFile(path, options)
-    return { path, matches }
+  const allMatches = await Promise.all(files.map(async file => {
+    const matches = await searchFile(file, options)
+    return matches.map(match => ({ ...match, file }))
   }))
-  return matches
+  const matches = allMatches.flat().filter(match => match.matches.length)
+  return { matches }
 }

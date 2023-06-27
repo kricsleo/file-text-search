@@ -1,23 +1,21 @@
 import { Pattern } from 'fast-glob'
 
-export type Text = string | RegExp
+export type Search = string | RegExp
 
 export interface Options {
-  text: Text[]
+  search: Search[]
   include: Pattern[]
   exclude?: Pattern[]
 }
 
-export interface TextMatch {
-  text: Text
-  files: Array<{
-    path: string
-    matches: Array<{
-      content: string
-      row: number
-      col: number
-    }>
+export interface Match {
+  search: Search
+  file: string
+  matches: Array<{
+    match: string
+    index: number
+    // todo:
+    // row: number
+    // col: number
   }>
 }
-
-export type TextMatches = TextMatch[]
