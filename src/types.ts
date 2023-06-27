@@ -13,7 +13,8 @@ export interface Match {
   file: string
   matches: Array<{
     match: string
-    index: number
+    start: number
+    end: number
     // todo:
     // row: number
     // col: number

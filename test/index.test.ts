@@ -17,104 +17,24 @@ describe('search', () => {
             "file": "/Users/shengfeng.xu/Documents/workspace/file-text-search/src/files.ts",
             "matches": [
               {
-                "end": 24,
-                "match": "Search",
-                "start": 18,
-              },
-              {
-                "end": 421,
+                "end": 429,
                 "match": "search",
-                "start": 415,
+                "start": 423,
               },
               {
-                "end": 452,
+                "end": 561,
                 "match": "search",
-                "start": 446,
+                "start": 555,
               },
               {
-                "end": 460,
-                "match": "Search",
-                "start": 454,
-              },
-              {
-                "end": 478,
+                "end": 754,
                 "match": "search",
-                "start": 472,
+                "start": 748,
               },
               {
-                "end": 497,
+                "end": 770,
                 "match": "search",
-                "start": 491,
-              },
-              {
-                "end": 535,
-                "match": "search",
-                "start": 529,
-              },
-              {
-                "end": 566,
-                "match": "search",
-                "start": 560,
-              },
-              {
-                "end": 581,
-                "match": "search",
-                "start": 575,
-              },
-              {
-                "end": 597,
-                "match": "search",
-                "start": 591,
-              },
-              {
-                "end": 612,
-                "match": "search",
-                "start": 606,
-              },
-              {
-                "end": 692,
-                "match": "search",
-                "start": 686,
-              },
-              {
-                "end": 873,
-                "match": "search",
-                "start": 867,
-              },
-              {
-                "end": 998,
-                "match": "search",
-                "start": 992,
-              },
-              {
-                "end": 1009,
-                "match": "search",
-                "start": 1003,
-              },
-              {
-                "end": 1041,
-                "match": "search",
-                "start": 1035,
-              },
-              {
-                "end": 1064,
-                "match": "search",
-                "start": 1058,
-              },
-              {
-                "end": 1085,
-                "match": "search",
-                "start": 1079,
-              },
-              {
-                "end": 1217,
-                "match": "search",
-                "start": 1211,
-              },
-              {
-                "end": 1376,
-                "match": "search",
-                "start": 1370,
+                "start": 764,
               },
             ],
             "search": /searcH/i,
@@ -123,94 +43,24 @@ describe('search', () => {
             "file": "/Users/shengfeng.xu/Documents/workspace/file-text-search/src/files.ts",
             "matches": [
               {
-                "end": 421,
+                "end": 429,
                 "match": "search",
-                "start": 415,
+                "start": 423,
               },
               {
-                "end": 452,
+                "end": 561,
                 "match": "search",
-                "start": 446,
+                "start": 555,
               },
               {
-                "end": 478,
+                "end": 754,
                 "match": "search",
-                "start": 472,
+                "start": 748,
               },
               {
-                "end": 497,
+                "end": 770,
                 "match": "search",
-                "start": 491,
-              },
-              {
-                "end": 535,
-                "match": "search",
-                "start": 529,
-              },
-              {
-                "end": 566,
-                "match": "search",
-                "start": 560,
-              },
-              {
-                "end": 581,
-                "match": "search",
-                "start": 575,
-              },
-              {
-                "end": 597,
-                "match": "search",
-                "start": 591,
-              },
-              {
-                "end": 612,
-                "match": "search",
-                "start": 606,
-              },
-              {
-                "end": 692,
-                "match": "search",
-                "start": 686,
-              },
-              {
-                "end": 873,
-                "match": "search",
-                "start": 867,
-              },
-              {
-                "end": 998,
-                "match": "search",
-                "start": 992,
-              },
-              {
-                "end": 1009,
-                "match": "search",
-                "start": 1003,
-              },
-              {
-                "end": 1041,
-                "match": "search",
-                "start": 1035,
-              },
-              {
-                "end": 1064,
-                "match": "search",
-                "start": 1058,
-              },
-              {
-                "end": 1085,
-                "match": "search",
-                "start": 1079,
-              },
-              {
-                "end": 1217,
-                "match": "search",
-                "start": 1211,
-              },
-              {
-                "end": 1376,
-                "match": "search",
-                "start": 1370,
+                "start": 764,
               },
             ],
             "search": "search",
@@ -263,23 +113,178 @@ describe('search', () => {
             "search": "search",
           },
           {
-            "file": "/Users/shengfeng.xu/Documents/workspace/file-text-search/src/worker.ts",
+            "file": "/Users/shengfeng.xu/Documents/workspace/file-text-search/src/worker.js",
             "matches": [
               {
-                "end": 30,
+                "end": 47,
+                "match": "Search",
+                "start": 41,
+              },
+              {
+                "end": 97,
                 "match": "search",
-                "start": 24,
+                "start": 91,
+              },
+              {
+                "end": 120,
+                "match": "search",
+                "start": 114,
+              },
+              {
+                "end": 138,
+                "match": "search",
+                "start": 132,
+              },
+              {
+                "end": 157,
+                "match": "search",
+                "start": 151,
+              },
+              {
+                "end": 195,
+                "match": "search",
+                "start": 189,
+              },
+              {
+                "end": 226,
+                "match": "search",
+                "start": 220,
+              },
+              {
+                "end": 241,
+                "match": "search",
+                "start": 235,
+              },
+              {
+                "end": 257,
+                "match": "search",
+                "start": 251,
+              },
+              {
+                "end": 272,
+                "match": "search",
+                "start": 266,
+              },
+              {
+                "end": 352,
+                "match": "search",
+                "start": 346,
+              },
+              {
+                "end": 531,
+                "match": "search",
+                "start": 525,
+              },
+              {
+                "end": 641,
+                "match": "search",
+                "start": 635,
+              },
+              {
+                "end": 652,
+                "match": "search",
+                "start": 646,
+              },
+              {
+                "end": 684,
+                "match": "search",
+                "start": 678,
+              },
+              {
+                "end": 707,
+                "match": "search",
+                "start": 701,
+              },
+              {
+                "end": 728,
+                "match": "search",
+                "start": 722,
               },
             ],
             "search": /searcH/i,
           },
           {
-            "file": "/Users/shengfeng.xu/Documents/workspace/file-text-search/src/worker.ts",
+            "file": "/Users/shengfeng.xu/Documents/workspace/file-text-search/src/worker.js",
             "matches": [
               {
-                "end": 30,
+                "end": 97,
                 "match": "search",
-                "start": 24,
+                "start": 91,
+              },
+              {
+                "end": 120,
+                "match": "search",
+                "start": 114,
+              },
+              {
+                "end": 138,
+                "match": "search",
+                "start": 132,
+              },
+              {
+                "end": 157,
+                "match": "search",
+                "start": 151,
+              },
+              {
+                "end": 195,
+                "match": "search",
+                "start": 189,
+              },
+              {
+                "end": 226,
+                "match": "search",
+                "start": 220,
+              },
+              {
+                "end": 241,
+                "match": "search",
+                "start": 235,
+              },
+              {
+                "end": 257,
+                "match": "search",
+                "start": 251,
+              },
+              {
+                "end": 272,
+                "match": "search",
+                "start": 266,
+              },
+              {
+                "end": 352,
+                "match": "search",
+                "start": 346,
+              },
+              {
+                "end": 531,
+                "match": "search",
+                "start": 525,
+              },
+              {
+                "end": 641,
+                "match": "search",
+                "start": 635,
+              },
+              {
+                "end": 652,
+                "match": "search",
+                "start": 646,
+              },
+              {
+                "end": 684,
+                "match": "search",
+                "start": 678,
+              },
+              {
+                "end": 707,
+                "match": "search",
+                "start": 701,
+              },
+              {
+                "end": 728,
+                "match": "search",
+                "start": 722,
               },
             ],
             "search": "search",
