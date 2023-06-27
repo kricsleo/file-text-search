@@ -20,7 +20,7 @@ export async function findFiles(options: Options) {
 export function searchContent(content: string, search: Search) {
   const searchReg = typeof search === 'string' 
     ? new RegExp(search, 'g') 
-    : search
+    : new RegExp(search.source, search.global ? search.flags : search.flags + 'g')
   const matches = []
   for (const match of content.matchAll(searchReg)) {
     matches.push({ 
