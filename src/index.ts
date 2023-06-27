@@ -19,7 +19,8 @@ export async function findFiles(options: Options) {
 
 export async function search(options: Options) {
   const tinypool = new Tinypool({
-    filename: new URL('./worker.js', import.meta.url).href,
+    // todo: replace './worker.ts' with bundled file name 
+    filename: new URL('./worker.ts', import.meta.url).href,
     name: 'searchFile'
   })
   const files = await findFiles(options)
