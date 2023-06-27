@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { Options } from '../src/types'
-import { search } from '../src/files'
+import { search } from '../src/index'
 
 const options: Options = {
   include: ['src/**/*'],
@@ -14,7 +14,7 @@ describe('search', () => {
       {
         "matches": [
           {
-            "file": "/Users/shengfeng.xu/Documents/workspace/file-text-search/src/files.ts",
+            "file": "/Users/shengfeng.xu/Documents/workspace/file-text-search/src/index.ts",
             "matches": [
               {
                 "end": 429,
@@ -40,7 +40,7 @@ describe('search', () => {
             "search": /searcH/i,
           },
           {
-            "file": "/Users/shengfeng.xu/Documents/workspace/file-text-search/src/files.ts",
+            "file": "/Users/shengfeng.xu/Documents/workspace/file-text-search/src/index.ts",
             "matches": [
               {
                 "end": 429,
