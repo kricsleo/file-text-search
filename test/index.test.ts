@@ -10,6 +10,17 @@ const options: Options = {
 describe('search', () => {
   it('text', async () => {
     const matches = await search(options)
+    const files = new Set(matches.map(t => t.file))
+    const matchCount = matches.reduce((acc, cur) => acc + cur.matches.length, 0)
+    expect(files.size).toMatchInlineSnapshot('3')
+    expect(files).toMatchInlineSnapshot(`
+      Set {
+        "/Users/shengfeng.xu/Documents/workspace/file-text-search/src/index.ts",
+        "/Users/shengfeng.xu/Documents/workspace/file-text-search/src/types.ts",
+        "/Users/shengfeng.xu/Documents/workspace/file-text-search/src/worker.ts",
+      }
+    `)
+    expect(matchCount).toMatchInlineSnapshot('52')
     expect(matches).toMatchInlineSnapshot(`
       [
         {
