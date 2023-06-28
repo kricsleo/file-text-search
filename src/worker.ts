@@ -1,7 +1,7 @@
 import fs from 'fs/promises'
-import { Search, Options } from './types'
+import { Match, Result, Search } from './types'
 
-export function searchContent(content: string, search: Search) {
+export function searchContent(content: string, search: Search): Match[] {
   const searchReg = typeof search === 'string' 
     ? new RegExp(search, 'g') 
     : new RegExp(search.source, search.global ? search.flags : search.flags + 'g')
@@ -16,7 +16,7 @@ export function searchContent(content: string, search: Search) {
   return matches
 }
 
-export async function searchFile(options: { file: string; search: Options['search'] }) {
+export async function searchFile(options: { file: string; search: Search[] }): Promise<Omit<Result, 'file'>[]> {
   const content = await fs.readFile(options.file, 'utf-8')
   const allMatches = options.search.map(search => {
     const matches = searchContent(content, search)

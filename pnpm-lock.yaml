@@ -4,41 +4,39 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-importers:
+dependencies:
+  fast-glob:
+    specifier: ^3.2.12
+    version: 3.2.12
+  tinypool:
+    specifier: ^0.5.0
+    version: 0.5.0
 
-  .:
-    dependencies:
-      fast-glob:
-        specifier: ^3.2.12
-        version: 3.2.12
-      tinypool:
-        specifier: ^0.5.0
-        version: 0.5.0
-    devDependencies:
-      '@antfu/ni':
-        specifier: ^0.21.3
-        version: 0.21.3
-      '@types/node':
-        specifier: ^18.16.16
-        version: 18.16.16
-      bumpp:
-        specifier: ^9.1.0
-        version: 9.1.0
-      esno:
-        specifier: ^0.16.3
-        version: 0.16.3
-      pnpm:
-        specifier: ^8.6.0
-        version: 8.6.0
-      typescript:
-        specifier: ^5.0.4
-        version: 5.0.4
-      unbuild:
-        specifier: ^1.2.1
-        version: 1.2.1
-      vitest:
-        specifier: ^0.31.3
-        version: 0.31.3
+devDependencies:
+  '@antfu/ni':
+    specifier: ^0.21.3
+    version: 0.21.3
+  '@types/node':
+    specifier: ^18.16.16
+    version: 18.16.16
+  bumpp:
+    specifier: ^9.1.0
+    version: 9.1.0
+  esno:
+    specifier: ^0.16.3
+    version: 0.16.3
+  pnpm:
+    specifier: ^8.6.0
+    version: 8.6.0
+  typescript:
+    specifier: ^5.0.4
+    version: 5.0.4
+  unbuild:
+    specifier: ^1.2.1
+    version: 1.2.1
+  vitest:
+    specifier: ^0.31.3
+    version: 0.31.3
 
 packages:
 
