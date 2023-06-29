@@ -8,17 +8,10 @@ export interface Options {
 
 export type Search = string | RegExp
 
-export interface Result {
-  search: Search
-  file: string
-  matches: Match[]
-}
-
 export interface Match {
+  search: Search
+  file: string  
   match: string
   start: number
   end: number
-  // todo:
-  // row: number
-  // col: number
 }
